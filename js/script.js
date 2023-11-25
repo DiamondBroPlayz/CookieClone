@@ -34,7 +34,7 @@ function cookieClick() {
         localStorage.setItem("cookies", cookieCount);
         document.getElementById("cookieCounter").innerHTML = "Cookies: " + cookieCount;
         if (localStorage.getItem("grandmaCount")) {
-            var grandmaBoost = parseInt(localStorage.getItem("clickerCount")) * parseInt(localstorage.getItem("grandmaCount"))
+            var grandmaBoost = parseInt(cookieCount) + parseInt(localStorage.getItem("clickerCount")) * 2
             cookieCount = grandmaBoost;
             localStorage.setItem("cookies", cookieCount);
             document.getElementById("cookieCounter").innerHTML = "Cookies: " + cookieCount;
